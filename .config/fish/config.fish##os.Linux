@@ -1,0 +1,33 @@
+set -gx PATH $HOME/.bin $HOME/go/bin /usr/local/go/bin $HOME/.cargo/bin $PATH
+
+set -gx EDITOR "vim"
+
+set fish_greeting
+
+# Key Bindings
+
+fish_vi_key_bindings
+fish_vi_cursor
+
+# Locale
+
+set -x LC_ALL en_US.UTF-8
+set -x LANG en_US.UTF-8
+
+# Prompt
+
+set -x WORKSPACE_PROMPT ∑
+starship init fish | source
+
+function __reset_device
+    printf '\033c' # See http://www.termsys.demon.co.uk/vtansi.htm.
+    commandline -f repaint
+end
+
+function fish_user_key_bindings
+    bind -M insert \ck __reset_device
+end
+
+function workspace-init
+    yadm lfs pull
+end

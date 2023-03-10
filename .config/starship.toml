@@ -1,0 +1,66 @@
+# Note: See colors in ~/.config/fish/conf.d/dracula.fish.
+
+add_newline = false
+
+format = """\
+  ${custom.yadm_status}\
+  $env_var\
+  $directory\
+  ${custom.git_branch}\
+  ${custom.git_describe}\
+  $git_status\
+  $cmd_duration\
+  $character\
+  """
+
+[directory]
+truncation_length = 1
+truncate_to_repo = false
+style = "bold cyan"
+
+[custom.yadm_status]
+when = """ test (yadm status --short) != '' """
+symbol = "!"
+style = "bold red"
+
+[custom.git_branch]
+when = """ git rev-parse --is-inside-work-tree """
+command = "git symbolic-ref --short HEAD"
+style = "cyan"
+format = "[$output](cyan) "
+
+[custom.git_describe]
+when = """ git rev-parse --is-inside-work-tree """
+command = "git describe --tags --always --dirty"
+style = "cyan"
+format = "[$output](cyan) "
+
+[git_status]
+conflicted = "!"
+ahead = "⇡"
+behind = "⇣"
+diverged = "~"
+# untracked = "*"
+# stashed = "*"
+modified = "*"
+staged = "++"
+# staged_count.enabled = true
+# staged_count.style = "#50fa7b"
+renamed = "*"
+deleted = "*"
+style = "#8be9fd"
+
+[cmd_duration]
+min_time = 2_000
+format = "[$duration](bold #f1fa8c) "
+
+[env_var]
+variable = "WORKSPACE_PROMPT"
+style = "red"
+format = "[$env_value]($style) "
+
+[character]
+success_symbol = "[I](bold #f1fa8c)"
+error_symbol = "[I](bold #ffb86c)"
+vicmd_symbol = "[N](bold #f1fa8c)"
+

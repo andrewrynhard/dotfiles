@@ -1,0 +1,36 @@
+[push]
+	default = simple
+[credential]
+	helper = store
+[core]
+	excludesfile = ~/.gitignore
+	ignorecase = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	required = true
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+[user]
+	name = Andrew Rynhard
+	email = andrew@rynhard.io
+	signingkey = 809014E94AFA0B343C298F52B560DE9E10007679
+[protocol]
+	version = 2
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+[merge]
+	gpgsign = true
+[tag]
+	gpgSign = true
+[alias]
+	amend = "!git commit --amend --no-edit --all"
+	amend-and-force-push = "!git amend-all && git push -f"
+	push-and-set-upstream = "!git push --set-upstream origin $(git symbolic-ref --short HEAD)"
+	pr = "!git push-and-set-upstream && gh pr create --draft --fill --base main"
+
