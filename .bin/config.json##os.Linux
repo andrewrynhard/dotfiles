@@ -9,6 +9,15 @@
             "url": "github.com/marcosnils/bin",
             "provider": "github",
             "package_path": ""
+        },
+        "/home/ubuntu/.bin/starship": {
+            "path": "/home/ubuntu/.bin/starship",
+            "remote_name": "starship",
+            "version": "v1.13.1",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/starship/starship",
+            "provider": "github",
+            "package_path": "starship"
         }
     }
 }
