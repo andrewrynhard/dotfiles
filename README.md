@@ -10,6 +10,6 @@ yadm clone https://github.com/andrewrynhard/dotfiles.git
 yadm remote set-url origin git@github.com:andrewrynhard/dotfiles.git
 yadm reset --hard HEAD
 yadm lfs pull
-scp ~/.gnupg/pubring.kbx workspace:~/.gnupg/
-docker buildx create --bootstrap --driver docker-container --name dev --platform linux/amd64 --buildkitd-flags '--allow-insecure-entitlement security.insecure' --use ssh://<remote user>@<remote machine>
+scp ~/.gnupg/pubring.kbx dev:~/.gnupg/
+docker buildx create --bootstrap --driver docker-container --name dev --platform linux/amd64 --buildkitd-flags '--allow-insecure-entitlement security.insecure' --use ssh://dev
 ```
