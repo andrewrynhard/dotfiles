@@ -10,6 +10,15 @@
             "provider": "github",
             "package_path": ""
         },
+        "/home/ubuntu/.bin/gh": {
+            "path": "/home/ubuntu/.bin/gh",
+            "remote_name": "gh",
+            "version": "v2.24.3",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/cli/cli",
+            "provider": "github",
+            "package_path": "gh_2.24.3_linux_amd64/bin/gh"
+        },
         "/home/ubuntu/.bin/starship": {
             "path": "/home/ubuntu/.bin/starship",
             "remote_name": "starship",
