@@ -1,4 +1,4 @@
-set -x PATH $HOME/.bin /opt/homebrew/bin $PATH
+set -x PATH $HOME/.bin /opt/homebrew/bin /opt/homebrew/opt/make/libexec/gnubin $PATH
 
 fish_vi_key_bindings
 fish_vi_cursor
