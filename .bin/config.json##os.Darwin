@@ -1,4 +1,14 @@
 {
     "default_path": "/Users/andrewrynhard/.bin",
-    "bins": {}
+    "bins": {
+        "/Users/andrewrynhard/.bin/virtctl-amd64": {
+            "path": "/Users/andrewrynhard/.bin/virtctl-amd64",
+            "remote_name": "virtctl-amd64",
+            "version": "v0.59.0",
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "url": "github.com/kubevirt/kubevirt",
+            "provider": "github",
+            "package_path": ""
+        }
+    }
 }
