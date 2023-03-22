@@ -13,7 +13,7 @@
         "/home/andrewrynhard/.bin/gh": {
             "path": "/home/andrewrynhard/.bin/gh",
             "remote_name": "gh",
-            "version": "v2.24.3",
+            "version": "v2.25.1",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "github.com/cli/cli",
             "provider": "",
