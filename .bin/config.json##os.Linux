@@ -13,7 +13,7 @@
         "/home/andrewrynhard/.bin/gh": {
             "path": "/home/andrewrynhard/.bin/gh",
             "remote_name": "gh",
-            "version": "v2.31.0",
+            "version": "v2.33.0",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "github.com/cli/cli",
             "provider": "",
@@ -22,7 +22,7 @@
         "/home/andrewrynhard/.bin/starship": {
             "path": "/home/andrewrynhard/.bin/starship",
             "remote_name": "starship",
-            "version": "v1.15.0",
+            "version": "v1.16.0",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "url": "github.com/starship/starship",
             "provider": "",
